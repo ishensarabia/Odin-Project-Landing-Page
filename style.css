@@ -88,14 +88,18 @@ nav ul li a {
     color: #333;
 }
 
-.img {
-    width: 400px;
-    height: 200px;
+.info-img {
+    
+    border-color: #3882F6;
+    border-radius: 20px;
+    border-style:solid;
 }
 
 
 
-.info {
+.page-body {
+    display: flex;
+    flex-direction: column;
     background-color: #eef0f4;
     padding: 40px 20px;
     text-align: center;
@@ -116,17 +120,18 @@ nav ul li a {
 }
 
 .info-box {
-    background-color: white;
-    padding: 20px;
     width: 22%;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    padding: 20px;
 }
 
 .quote {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
     padding: 60px 20px;
     background-color: #E5E7EB;
     text-align: center;
+    margin-top: 100px;
 }
 
 .quote blockquote {
@@ -137,7 +142,6 @@ nav ul li a {
 }
 
 .quote cite {
-    margin-top: 20px;
     margin-left: 1200px;
     color: #0d1b2a;
     font-style: normal;
@@ -146,20 +150,49 @@ nav ul li a {
 }
 
 .call-to-action {
-    background-color: #0d1b2a;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    max-width: 1000px;
+    background-color: #E5E7EB;
     color: white;
-    text-align: center;
-    padding: 40px 20px;
+    padding: 40px;
+    border-radius: 8px;
+    background-color: #3882F6;
+    margin: auto;
+    margin-top: 40px;
 }
 
-.call-to-action p {
-    margin-bottom: 20px;
+.call-to-action-text{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: auto;
+}
+
+
+.call-to-action-title{
+    font-weight: bold;
+}
+
+.call-to-action-sign-up-btn{
+    background-color: #3882F6;
+    font-weight: bold;
+    color: #E5E7EB;
+    border-radius: 5px;
+    border-color:#E5E7EB;
+    cursor: pointer;
+    border-style: double;
+    width: 100px;
+    padding: 5px;
+    margin: auto;
 }
 
 footer {
-    background-color: #f4f4f4;
+    background-color: #1F2937;
+    font-weight: 500;
     text-align: center;
     padding: 20px;
-    color: #666;
+    color: #F9FAF8;
     font-size: 0.8rem;
 }
